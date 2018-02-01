@@ -4,15 +4,14 @@
 
 Reference::Reference()
 {
-	countID++;
-	ID = countID;
+	//countID++;
+	ID = ++countID;
 	publicYear = 2000;
-	std::string tString = "New Title" + ID;
-	this->title = tString;
+	this->title = "New Title";
 	this->author = "John Dow";
 }
 
-Reference::Reference(std::string title, char * author, int pubYear):publicYear(pubYear)
+Reference::Reference(char* title, char * author, int pubYear):publicYear(pubYear)
 {
 	countID++;
 	ID = countID;

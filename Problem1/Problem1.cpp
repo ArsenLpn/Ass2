@@ -28,7 +28,7 @@ int main()
 	cout << "\nGet functions:";																	//Test get functions
 	cout << "\nr2 ID is: " << r2->getID();
 	cout << "\nr2 author: " << r2->getAuthor();
-	//cout << "\nr2 title:" << r2->GetTitle();
+	cout << "\nr2 title:" << r2->GetTitle();
 	cout << "\nr2 year: " << r2->getYear();
 	
 	cout << "\n\nPrint two references:\n";														//test print functions
