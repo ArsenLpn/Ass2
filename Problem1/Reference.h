@@ -17,7 +17,7 @@ public:
 	const char* getAuthor() { return this->author; };
 	const char* getTitle() { return this->title; };
 	const int getYear() { return this->publicYear; };
-	const std::string GetTitle() { return this->title; };
+	const char* GetTitle() { return this->title; };
 	///////////////////////////////////////////////////////
 
 

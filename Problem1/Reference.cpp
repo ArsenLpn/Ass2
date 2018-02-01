@@ -4,7 +4,6 @@
 
 Reference::Reference()
 {
-	//countID++;
 	ID = ++countID;
 	publicYear = 2000;
 	this->title = "New Title";
@@ -13,8 +12,7 @@ Reference::Reference()
 
 Reference::Reference(char* title, char * author, int pubYear):publicYear(pubYear)
 {
-	countID++;
-	ID = countID;
+	ID = ++countID;
 
 	this->author = author;
 	this->title = title;
@@ -28,6 +26,7 @@ void Reference::print()
 
 Reference::~Reference()
 {
-	delete this->author;
+	//delete this->author;						//how the hell do I clean after dinamic allocation
+												//this cases exception when there is nothing in main()
 	//delete this->title;
 }
