@@ -10,7 +10,7 @@ class KeepAlive
 public:
 	KeepAlive() {};
 	~KeepAlive() {										//at the end when static object will be killed this destructor will hold the console window open
-		std::cout << "Press enter to exit.";
+		std::cout << "\nPress enter to exit.";
 		std::cin.get();
 	};
 };
