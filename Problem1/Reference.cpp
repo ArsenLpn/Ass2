@@ -20,7 +20,7 @@ Reference::Reference(char* title, char * author, int pubYear):publicYear(pubYear
 
 void Reference::print()
 {
-	std::cout << this->ID << " " << this->title << "," << this->author << " " << this->publicYear << std::endl;
+	std::cout << "\n" << this->ID << " " << this->title << ", " << this->author << " " << this->publicYear << std::endl;
 }
 
 

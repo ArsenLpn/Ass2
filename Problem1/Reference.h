@@ -13,16 +13,19 @@ public:
 	void print();
 	~Reference();
 	/**************************Getters**********************/
-	const int getID() { return this->ID; };
-	const char* getAuthor() { return this->author; };
-	const char* getTitle() { return this->title; };
-	const int getYear() { return this->publicYear; };
-	const char* GetTitle() { return this->title; };
+	int getID() const { return this->ID; };
+	char* getAuthor() const { return this->author; };
+	char* getTitle() const { return this->title; };
+	int getYear() const { return this->publicYear; };
+	char* GetTitle() const { return this->title; };
 	///////////////////////////////////////////////////////
-
-
-private:
-	int ID;															//Unique ID
+	void setID(int id) { this->ID = id; };
+	void setTitle(char* t) { this->title = t; };
+	void setAuthor(char* a) { this->author = a; };
+	
+protected:
+	int ID;
+private:												//Unique ID
 	char* title;
 	char* author;
 	int publicYear;

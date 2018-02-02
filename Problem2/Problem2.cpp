@@ -11,7 +11,7 @@ class KeepAlive
 public:
 	KeepAlive() {};
 	~KeepAlive() {										//at the end when static object will be killed this destructor will hold the console window open
-		std::cout << "Press enter to exit.";
+		std::cout << "\n\nPress enter to exit.";
 		std::cin.get();
 	};
 };
@@ -23,8 +23,8 @@ void main()
 {
 	KeepAlive kl{};										//Pause before exiting
 
-	Article *ar1 = new Article();
-
+	Article *ar1 = new Article(3, "Author", "title", 2000, "Journal", 5, 10);
+	ar1->Print();
 	
 }
 
