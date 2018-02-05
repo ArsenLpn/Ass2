@@ -16,19 +16,20 @@ public:
 };
 #endif
 
+int Reference::countID;
 using namespace std;
 int main()
 {
 	KeepAlive kp;										//pause the console at the end
 
-	Report*r1 = new Report(22, "Harry Franckfurt", "On Bullshit", 2005, "Princeton University", "Philosophy");
+	Report*r1 = new Report(22, "Harry Franckfurt", "On Bullshit", 2005, "Princeton University", "Philosophy");	//crate a new Report obj. using regular constructor
 
-	cout << "\nFunctions(2): ";
-	cout << "\nInstitution: " << r1->getInstitution();
-	cout << "\nDepartment: " << r1->getDepartment();
+	cout << "\nFunctions(2): ";							//test build in functions
+	cout << "\nInstitution: " << r1->getInstitution();	//getInstitution()
+	cout << "\nDepartment: " << r1->getDepartment();	//getDepartment()
 
 	cout << "\nprint(): ";
-	r1->print();
+	r1->print();										//overriden function print()
 	
 
 
